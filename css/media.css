@@ -1,0 +1,63 @@
+@media screen and (max-width: 991px) {
+  .mycollapse {
+    flex-basis: 100%;
+    flex-grow: 1;
+    align-items: center;
+    /* height: 75vh; */
+    background-color: #fff;
+    padding: 20px;
+  }
+  .mylist {
+    color: black !important;
+    transition: 0.3s all;
+  }
+  .mylist::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    background-color: #fff;
+    bottom: 0;
+    left: 0.5rem;
+    transition: 0.3s all;
+  }
+  .list-of-mine:hover .mylist {
+    color: #0d6efd !important;
+  }
+}
+@media screen and (max-width:767px) {
+    header .content h2 {
+    font-size: 3.375rem;
+   
+}
+.my-head-text {
+    line-height: 1.4 !important;
+}
+}
+@media screen and (max-width:585px){
+  .row{
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+@media screen and (max-width:520px) {
+  .up-left-sec{
+    flex-direction: column;
+    text-align: center;
+  }
+  .imgsec{
+    margin-right: 0 !important;
+    margin-bottom: 10px;
+  }
+}
+
+
+/* @media screen and (max-width:767px) {
+  header .content h2 {
+    font-size: 3.375rem;
+   
+}
+.my-head-text {
+    line-height: 1.4 !important;
+}
+} */

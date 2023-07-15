@@ -1,0 +1,879 @@
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 87px;
+}
+::-webkit-scrollbar {
+  width: 12px;
+  background-color: #fff;
+  border-left: 2px solid #eee;
+  box-shadow: 0px 0px 21px 0px #0003 inset;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #0d6efd;
+  box-shadow: 0px 0px 10px 0px #eeeeee8c inset;
+  border-radius: 100vh;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f5f5f5;
+}
+.main-title {
+  width: fit-content;
+}
+.main-title::before {
+  content: "";
+  position: absolute;
+  width: 15%;
+  height: 0.3125rem;
+  bottom: 0;
+  left: 50%;
+  background-color: #0078ff;
+  transform: translateX(-50%);
+}
+.main-title h2 {
+  font-size: 2.8125rem;
+  font-weight: 800;
+}
+.main-title p {
+  color: #4e4e4e;
+}
+nav.mynav {
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 999;
+  color: #fff;
+}
+a.mylogo {
+  color: #fff;
+  font-size: 30px;
+}
+.mylist {
+  color: #fff !important;
+  font-size: 1.0625rem;
+  letter-spacing: 1;
+
+  text-transform: uppercase;
+  position: relative;
+}
+
+.mylist::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: #fff;
+  bottom: 0;
+  left: 0.5rem;
+  transition: 0.3s all;
+}
+.list-of-mine:hover .mylist::before {
+  width: 55%;
+}
+
+.active::before {
+  content: "";
+  position: absolute;
+  width: 55%;
+  height: 2px;
+  background-color: #fff;
+  bottom: 0;
+  left: 0.5rem;
+  transition: 0.3s all;
+}
+.active-feed::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: #fff;
+  bottom: 0;
+  left: 0.5rem;
+  transition: 0.3s all;
+}
+.mylogo:hover {
+  color: #fff;
+}
+.mytoggle-color {
+  background-image: url(../imgs/icons8-hamburger-50.png);
+}
+
+.mylogo:focus {
+    color: #fff;
+}
+
+header {
+  background-image: url(../imgs/hero-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+header .content h2 {
+  font-size: 4.375rem;
+  position: relative;
+}
+header .content h2::after {
+  content: " |";
+  position: absolute;
+  font-size: 2.5rem;
+  bottom: -100px;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+  -ms-transform: translate(-50%);
+  transform: translate(-50%);
+  -webkit-animation: typing 15s infinite;
+  animation: typing 10s infinite;
+}
+/* animation */
+@-webkit-keyframes typing {
+  0% {
+    content: " P |";
+  }
+  .8% {
+    content: " Ph |";
+  }
+  1.5% {
+    content: " Pho |";
+  }
+  2.4% {
+    content: " Phot |";
+  }
+  3.6% {
+    content: " Photo |";
+  }
+  4.8% {
+    content: " Photog |";
+  }
+  6% {
+    content: " Photogr |";
+  }
+  6.2% {
+    content: " Photogra |";
+  }
+  7.4% {
+    content: " Photograp |";
+  }
+  8.6% {
+    content: " Photograph |";
+  }
+  9.8% {
+    content: " Photographe |";
+  }
+  11% {
+    content: " Photographer|";
+  }
+  11.2% {
+    content: " Photographe |";
+  }
+  12.4% {
+    content: " Photograph |";
+  }
+  13.6% {
+    content: " Photograp |";
+  }
+  14.8% {
+    content: " Photogra |";
+  }
+  15% {
+    content: " Photogr |";
+  }
+  16.2% {
+    content: " Photog |";
+  }
+  17.4% {
+    content: " Photo |";
+  }
+  18.6% {
+    content: " Phot |";
+  }
+  20.8% {
+    content: " Pho |";
+  }
+  22% {
+    content: " P |";
+  }
+  23.2% {
+    content: "  |";
+  }
+  24% {
+    content: " D |";
+  }
+  25% {
+    content: " De |";
+  }
+  26% {
+    content: " Des |";
+  }
+  27% {
+    content: " Desi |";
+  }
+  28% {
+    content: " Desig |";
+  }
+  29% {
+    content: " Design |";
+  }
+  30% {
+    content: " Designe |";
+  }
+  31% {
+    content: " Designer |";
+  }
+  32% {
+    content: " Designe |";
+  }
+  33% {
+    content: " Design |";
+  }
+  34% {
+    content: " Desig |";
+  }
+  35% {
+    content: " Desi |";
+  }
+  36% {
+    content: " Des |";
+  }
+  37% {
+    content: " De |";
+  }
+  38% {
+    content: " Dev |";
+  }
+  39% {
+    content: " Deve |";
+  }
+  40% {
+    content: " Devel |";
+  }
+  41% {
+    content: " Develo |";
+  }
+  42% {
+    content: " Develop |";
+  }
+  43% {
+    content: " Develope |";
+  }
+  44% {
+    content: " Developer |";
+  }
+  45% {
+    content: " Develope |";
+  }
+  46% {
+    content: " Develop |";
+  }
+  47% {
+    content: " Develo |";
+  }
+  48% {
+    content: " Devel |";
+  }
+  49% {
+    content: " Deve |";
+  }
+  50% {
+    content: " Dev |";
+  }
+  52% {
+    content: " De |";
+  }
+  54% {
+    content: " D |";
+  }
+  56% {
+    content: "  |";
+  }
+  58% {
+    content: " F |";
+  }
+  60% {
+    content: " Fr |";
+  }
+  61% {
+    content: " Fre |";
+  }
+  62% {
+    content: " Free |";
+  }
+  64% {
+    content: " Freel |";
+  }
+  66% {
+    content: " Freela |";
+  }
+  68% {
+    content: " Freelan |";
+  }
+  70% {
+    content: " Freelanc |";
+  }
+  72% {
+    content: " Freelance |";
+  }
+  74% {
+    content: " Freelancer |";
+  }
+  76% {
+    content: " Freelance |";
+  }
+  78% {
+    content: " Freelanc |";
+  }
+  80% {
+    content: " Freelan |";
+  }
+  82% {
+    content: " Freela |";
+  }
+  84% {
+    content: " Freel |";
+  }
+  86% {
+    content: " Free |";
+  }
+  88% {
+    content: " Fre |";
+  }
+  92% {
+    content: " Fr |";
+  }
+  96% {
+    content: " F |";
+  }
+  100% {
+    content: "  |";
+  }
+}
+@keyframes typing {
+  0% {
+    content: " P |";
+  }
+  .8% {
+    content: " Ph |";
+  }
+  1.5% {
+    content: " Pho |";
+  }
+  2.4% {
+    content: " Phot |";
+  }
+  3.6% {
+    content: " Photo |";
+  }
+  4.8% {
+    content: " Photog |";
+  }
+  6% {
+    content: " Photogr |";
+  }
+  6.2% {
+    content: " Photogra |";
+  }
+  7.4% {
+    content: " Photograp |";
+  }
+  8.6% {
+    content: " Photograph |";
+  }
+  9.8% {
+    content: " Photographe |";
+  }
+  11% {
+    content: " Photographer|";
+  }
+  11.2% {
+    content: " Photographe |";
+  }
+  12.4% {
+    content: " Photograph |";
+  }
+  13.6% {
+    content: " Photograp |";
+  }
+  14.8% {
+    content: " Photogra |";
+  }
+  15% {
+    content: " Photogr |";
+  }
+  16.2% {
+    content: " Photog |";
+  }
+  17.4% {
+    content: " Photo |";
+  }
+  18.6% {
+    content: " Phot |";
+  }
+  20.8% {
+    content: " Pho |";
+  }
+  22% {
+    content: " P |";
+  }
+  23.2% {
+    content: "  |";
+  }
+  24% {
+    content: " D |";
+  }
+  25% {
+    content: " De |";
+  }
+  26% {
+    content: " Des |";
+  }
+  27% {
+    content: " Desi |";
+  }
+  28% {
+    content: " Desig |";
+  }
+  29% {
+    content: " Design |";
+  }
+  30% {
+    content: " Designe |";
+  }
+  31% {
+    content: " Designer |";
+  }
+  32% {
+    content: " Designe |";
+  }
+  33% {
+    content: " Design |";
+  }
+  34% {
+    content: " Desig |";
+  }
+  35% {
+    content: " Desi |";
+  }
+  36% {
+    content: " Des |";
+  }
+  37% {
+    content: " De |";
+  }
+  38% {
+    content: " Dev |";
+  }
+  39% {
+    content: " Deve |";
+  }
+  40% {
+    content: " Devel |";
+  }
+  41% {
+    content: " Develo |";
+  }
+  42% {
+    content: " Develop |";
+  }
+  43% {
+    content: " Develope |";
+  }
+  44% {
+    content: " Developer |";
+  }
+  45% {
+    content: " Develope |";
+  }
+  46% {
+    content: " Develop |";
+  }
+  47% {
+    content: " Develo |";
+  }
+  48% {
+    content: " Devel |";
+  }
+  49% {
+    content: " Deve |";
+  }
+  50% {
+    content: " Dev |";
+  }
+  52% {
+    content: " De |";
+  }
+  54% {
+    content: " D |";
+  }
+  56% {
+    content: "  |";
+  }
+  58% {
+    content: " F |";
+  }
+  60% {
+    content: " Fr |";
+  }
+  61% {
+    content: " Fre |";
+  }
+  62% {
+    content: " Free |";
+  }
+  64% {
+    content: " Freel |";
+  }
+  66% {
+    content: " Freela |";
+  }
+  68% {
+    content: " Freelan |";
+  }
+  70% {
+    content: " Freelanc |";
+  }
+  72% {
+    content: " Freelance |";
+  }
+  74% {
+    content: " Freelancer |";
+  }
+  76% {
+    content: " Freelance |";
+  }
+  78% {
+    content: " Freelanc |";
+  }
+  80% {
+    content: " Freelan |";
+  }
+  82% {
+    content: " Freela |";
+  }
+  84% {
+    content: " Freel |";
+  }
+  86% {
+    content: " Free |";
+  }
+  88% {
+    content: " Fre |";
+  }
+  92% {
+    content: " Fr |";
+  }
+  96% {
+    content: " F |";
+  }
+  100% {
+    content: "  |";
+  }
+}
+
+/* animation */
+
+.imgsec img {
+  border-radius: 0.375rem;
+}
+.sec-info p:last-child {
+  margin-bottom: 0;
+}
+.sec-info p span {
+  /* font-weight: 500; */
+  color: black;
+}
+.sec-info p {
+  color: #777;
+  /* font-weight: 300; */
+}
+.progress-bars span {
+  color: #777;
+}
+.myborder-raduis {
+  border-radius: 0.1875rem;
+  height: 0.75rem;
+  background-color: #cde1f8;
+}
+.rightsec1 {
+  color: #777;
+}
+
+.sec1 {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+.rightsec1 h2 {
+  font-size: 1.875rem;
+  color: black;
+  position: relative;
+  width: fit-content;
+}
+.rightsec1 h2::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 75%;
+  height: 0.1875rem;
+  background-color: #0078ff;
+}
+.rightsec1 p {
+  font-size: 1.25rem;
+  color: #4e4e59;
+}
+
+.icon-sec2 {
+  width: fit-content;
+  background-color: #fff;
+  border: 9px solid #0078ff;
+  transition: 0.3s all;
+}
+.icon-sec2 i {
+  font-size: 2rem;
+  transition: 0.7s all;
+}
+
+.box:hover .icon-sec2 {
+  background-color: #0078ff;
+  border: 9px solid #b1d2f9;
+}
+.box:hover .icon-sec2>i{
+  color: #fff;
+}
+
+.box {
+  background-color: #f5f5f5;
+}
+.box .inner {
+  box-shadow: 13px 8px -10px rgba(0, 0, 0, 0.1);
+}
+.box .inner p {
+  color: #4e4e4e;
+}
+
+/* sec3 */
+/* sec3 */
+.sec3 {
+  position: relative;
+  background-image: url(../imgs/post-3.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.sec3::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 119, 255, 0.799);
+}
+.appear {
+  z-index: 9;
+}
+
+.sec3-icon {
+  width: fit-content;
+  border: 8px solid #cde1f8;
+  background-color: transparent;
+}
+.sec3-icon i {
+  color: #fff;
+  font-size: 20px;
+}
+
+.box-sec3 {
+  color: #fff;
+}
+.box-sec3 span {
+  font-size: 35px;
+}
+.box-sec3 p {
+  font-size: 20px;
+}
+
+/* sec4 */
+/* sec4 */
+
+.sec4-box {
+  padding: 0;
+}
+
+.bottom-sec4 p span {
+  color: #0078ff;
+}
+.bottom-sec4 .btm-ryt i {
+  color: #0078ff;
+  font-size: 35px;
+}
+.top-sec4 img {
+  transition: 0.4s all;
+}
+.top-sec4 {
+  overflow: hidden;
+}
+.sec4-box:hover img {
+  transform: scale(1.2);
+}
+
+.sec4-inner {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+/* section slider */
+
+.slider {
+  background-image: url(../imgs/overlay-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  z-index: 888;
+}
+.slider::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 119, 255, 0.815);
+}
+
+.slider-img img {
+  width: 150px;
+  margin: auto;
+  float: none;
+}
+.content-slider {
+  color: #fff;
+}
+
+.my-position {
+  bottom: -60px;
+}
+
+/* sec5 */
+/* sec5 */
+
+.card-title a {
+  color: black;
+  transition: 0.4s all;
+}
+.card-title:hover a {
+  color: #0078ff;
+}
+.left-card-foot img {
+  width: 30px;
+}
+.right-card-foot span a {
+  color: black;
+}
+.left-card-foot span a {
+  color: black;
+  transition: 0.4s all;
+}
+.left-card-foot span a:hover {
+  color: #0078ff;
+}
+.card-text {
+  color: #4e4e70;
+}
+
+.my-decor {
+  position: relative;
+}
+.my-dcoration {
+  background-color: #0078ff;
+  color: #fff;
+  width: fit-content;
+  top: -18px;
+}
+
+
+
+
+/* form */
+/* form */
+
+.sec6 {
+  background-image: url(../imgs/overlay-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
+.sec6::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0077ff90;
+}
+.theinner {
+  position: relative;
+  z-index: 888;
+}
+
+.left-form h2 {
+  width: fit-content;
+}
+.left-form h2::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 35%;
+  height: 4px;
+  background-color: #0078ff;
+}
+.right-form h2 {
+  width: fit-content;
+}
+.right-form h2::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 35%;
+  height: 4px;
+  background-color: #0078ff;
+}
+.right-form .inner-form .rightFirst-row i {
+  color: #0078ff;
+}
+.right-form .inner-form p {
+  color: #818181;
+}
+
+.social i {
+  width: 15px;
+  height: 15px;
+  background-color: #fff;
+  border: 4px solid #0078ff;
+  transition: 0.4s all;
+}
+.social i:hover {
+  background-color: #0078ff !important;
+  color: #fff;
+  border: 4px solid #496b92;
+}
+
+.my-last-btn {
+  width: fit-content;
+}
+
+.last-cont {
+  background-color: #0062d3;
+}
+.last {
+  color: #fff;
+}
+
+body > a {
+  z-index: 99999;
+  background-color: #0062d3;
+  color: #fff;
+  border-radius: 50%;
+  bottom: 20px;
+  right: 20px;
+  font-size: 15px;
+}
